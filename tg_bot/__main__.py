@@ -139,14 +139,13 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
-                                                                       callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🧑‍💻My Creator🧑‍💻",
-                                                                       url="t.me/R2K_VENOM")],
-                                                                                   [InlineKeyboardButton(text="ADD VENOM BOT TO YOUR GROUP",
-                                                                       url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/UltroidVenom/GRANDROBOT")
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[
+                                                                                   InlineKeyboardButton(text="ǟɖɖ 𝙑𝙀𝙉𝙊𝙈 ȶօ ʏօʊʀ ɢʀօʊք",
+                                                                       url="t.me/{}?startgroup=true")],
+                                                                                   [InlineKeyboardButton(text="ʍʏ ƈʀɛǟȶօʀ",
+                                                                       url="t.me/R2K_VENOM".format(bot.username)),
+                                                                                   InlineKeyboardButton(text="ֆʊքքօʀȶ ɢʀօʊք",
+                                                                       url="t.me/CrackMonkeyChats")
                                                                                  ]]))
 
     else:
