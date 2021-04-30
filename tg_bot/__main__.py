@@ -141,9 +141,9 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[
                                                                                    InlineKeyboardButton(text="ǟɖɖ 𝙑𝙀𝙉𝙊𝙈 ȶօ ʏօʊʀ ɢʀօʊք",
-                                                                       url="t.me/{}?startgroup=true")],
+                                                                       url="t.me/{}?startgroup=true".format(bot.username))],
                                                                                    [InlineKeyboardButton(text="ʍʏ ƈʀɛǟȶօʀ",
-                                                                       url="t.me/R2K_VENOM".format(bot.username)),
+                                                                       url="t.me/R2K_VENOM"),
                                                                                    InlineKeyboardButton(text="ֆʊքքօʀȶ ɢʀօʊք",
                                                                        url="t.me/CrackMonkeyChats")
                                                                                  ]]))
